@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make Your Payment</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://www.paypal.com/sdk/js?client-id=AQYXX2xnYJs1yFl_O4GFH1V7Cimp62lEdSct1xnX2AJp8XHKrf1GxDBqEgfBQ5jWbRSQq4XnTSUeaR0n"></script>
+</head>
+<body>
+
+    <header>
+        <nav class="nav">
+            <span class="nav__span">DevJaymmy</span>
+            <ul class="nav__ul">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about.html">About</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+            <button class="menu">
+                <div class="menu__bar"></div>
+                <div class="menu__bar"></div>
+                <div class="menu__bar"></div>
+            </button>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="main__h2">Show some love <span>&hearts;</span></div>
+            <div class="amount-options">
+              <button class="amount-button" data-amount="1">$1</button>
+              <button class="amount-button" data-amount="5">$5</button>
+              <button class="amount-button" data-amount="10">$10</button>
+              <button class="amount-button" data-amount="15">$15</button>
+              <button class="amount-button" data-amount="20">$20</button>
+            </div>
+            <div class="custom-amount">
+              <label for="custom-amount">Custom Amount:</label>
+              <input type="number" id="custom-amount" name="custom-amount" step="0.01" placeholder="Enter custom amount">
+            </div>
+            <div id="paypal-button-container"></div>
+            <div id="flash-message" class="hidden">Amount selected!</div>
+          </div>
+    </main>
+    <footer>
+        <p class="footer__p">
+            &copy; 2024 DevJaymmy Foundation. All rights reserved.
+        </p>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
